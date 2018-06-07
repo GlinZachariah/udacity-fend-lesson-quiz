@@ -1,0 +1,91 @@
+/*
+Defined the default styling for the portfolio
+*/
+body, div, img{
+	max-width: 100%;
+	/*margin-left: auto;*/
+	/*margin-right: auto;*/
+	display: block;
+	font-family: 'Raleway', sans-serif;
+	font-size: 16px;
+	line-height: 1.5em;	
+	padding: 0.25em;
+}
+
+.header{
+	/*width: 100%;*/
+}
+
+.header_inner{
+	display: flex;
+	flex-wrap: wrap;
+	border-bottom: solid;
+	border-color: lightgrey; 
+}
+
+.header_image_box{
+	width: 100%;
+	display: inline-block;
+}
+
+.header_image{
+	display: block;
+	min-height: 110px;
+	min-width: 110px;
+/*	margin-left: auto;
+	margin-right: auto;
+*/	padding: 0px;
+	box-shadow:  1px 10px 10px 1px grey;
+}
+.header_title{
+	width: 100%;
+}
+.header_title h1 {
+	font-weight: 300;
+	/*max-width: 100%;*/
+	white-space: nowrap;
+	text-align: center;
+	width: 100%;
+	font-size: 1.5em;
+	text-transform: uppercase;
+}
+.header_title h4{
+	/*font-weight: 500;*/
+	width: 100%;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.socialmedia{
+	height: auto;
+	font-size: 1.5em;
+	display: flex;
+	width: 100%;
+	flex-wrap: nowrap;
+}
+
+.socialmedia span{
+	margin-top: 5px;
+	display: inline-flex;
+	width: 33%;
+}
+.content{
+	width:100%;
+	margin-left: 0;
+	margin-right: 0;
+	padding-left: 0;
+	padding-right: 0;
+	display: flex;
+	flex-wrap: wrap;
+
+
+}
+
+.cover_image_box,.content_inner{
+	width: 100%;
+	display: inline-block;
+	text-align: center;
+	padding-left: 0;
+	margin-left: auto;
+	margin-right: auto;
+}
