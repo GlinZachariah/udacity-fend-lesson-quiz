@@ -19,7 +19,13 @@
 		margin-bottom: 12px;
 	}
 	
-
+	.work_title{
+		text-align: center;
+	}
+	.work_img{
+		display: block;
+		margin: 0 auto;
+	}
 
 }
 
@@ -62,6 +68,14 @@
 		width: 100%;
 		margin-bottom: 12px;
 	}
+
+	.work_title{
+		text-align: center;
+	}
+	.work_img{
+		display: block;
+		margin: 0 auto;
+	}
 }
 
 @media  screen and (min-width: 850px) {
@@ -96,6 +110,24 @@
 	}
 	.social_icon{
 		padding: 12px;
+	}
+	.work_title{
+		text-align: left;
+	}
+
+	.works{
+		width:850px;
+		margin: 0 auto;
+	}
+
+	.work_inner{
+		display: flex;
+	}
+
+	.figure{
+		display: block;
+		width: 98%;
+		margin: 0;
 	}
 
 }
