@@ -1,0 +1,40 @@
+@media  screen and (max-width: 650px) {
+
+.header_img{
+	width: 50%;
+	display: block;
+	margin: 0 auto;	
+}
+
+
+}
+
+@media  screen and (min-width: 650px) {
+	.header{
+		width: 100%;
+		display: flex;
+		height: auto
+	}
+	.header_img{
+	box-shadow: 1px 10px 10px 1px grey;
+	margin-top: 20px;
+	width: 20%;
+	height: 20%;
+	display: block;
+	
+}
+
+.header_title{
+	text-align: right;
+	text-transform: uppercase;
+	margin:auto 0;
+	width: 100%;
+
+	}
+}
+
+@media  screen and (min-width: 850px) {
+	.header{
+		width: 850px;
+	}
+}
