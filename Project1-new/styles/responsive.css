@@ -1,10 +1,24 @@
 @media  screen and (max-width: 650px) {
 
-.header_img{
-	width: 50%;
-	display: block;
-	margin: 0 auto;	
-}
+	.header_img{
+		width: 50%;
+		display: block;
+		margin: 0 auto;	
+	}
+
+	.content_social{
+		position: fixed;
+		width: 15%;
+		right: 16px;
+		bottom: 16px;
+
+	}
+
+	.content_img{
+		width: 100%;
+		margin-bottom: 12px;
+	}
+	
 
 
 }
@@ -31,10 +45,57 @@
 	width: 100%;
 
 	}
+
+	.share_icon{
+		display: none;
+	}
+
+	.social{
+		position: fixed;
+		right: 30%;
+		bottom: 0px;
+		width: 40%;
+		display: flex;
+	}
+
+	.content_img{
+		width: 100%;
+		margin-bottom: 12px;
+	}
 }
 
 @media  screen and (min-width: 850px) {
 	.header{
 		width: 850px;
 	}
+
+	.content{
+		width: 850px;
+		display: flex;
+		margin-bottom: 12px;
+		margin: 0 auto;
+	}
+
+	.content_social{
+		width: 10%;
+		display: block;
+	}
+
+	.content_img{
+		width: 90%;
+	}
+
+	.social{
+		display: block;
+		margin: auto 0;
+		position: relative;
+		top :15%;
+		right: 0;
+		width: 100%;
+		/*height: 100%;*/
+	}
+	.social_icon{
+		padding: 12px;
+	}
+
 }

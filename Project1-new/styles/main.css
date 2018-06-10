@@ -23,3 +23,7 @@
 	box-shadow: 1px 10px 10px 1px grey;
 	margin-top: 20px;
 }
+
+.social_icon{
+		border-radius: 50%;
+	}
