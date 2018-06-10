@@ -1,70 +1,75 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+	<!-- Required meta tags -->
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<title>My Portfolio</title>
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" type="text/css" href="styles/bootstrap.css">
+	<!-- Google fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500" rel="stylesheet">
-	<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+	<!-- Custom stylesheet -->
 	<link rel="stylesheet" type="text/css" href="styles/main.css">
-	<link rel="stylesheet" type="text/css" href="styles/larger.css" media="screen and (min-width: 1040px)">
-	<link rel="stylesheet" type="text/css" href="styles/large.css" media="screen and (min-width: 870px) and (max-width: 1039px)">
-	<link rel="stylesheet" type="text/css" href="styles/medium.css" media="screen and (min-width: 440px) ">	
+	<link rel="stylesheet" type="text/css" href="styles/responsive.css">
+	<script type="text/javascript" src="scripts/scripts.js"></script>
 </head>
 <body>
-	<!-- Defined the header for the portfolio -->
-	<div class="container">
-	<header class="header">
-		<div class="header_inner">
-			<div class="header_image_box">
-				<img src="images/profile.jpeg" class="header_image">
-			</div>
+	<!-- section 1 > header-->
+
+	<div class="container-fluid">
+		<header class="container-fluid header">
+			<!-- Logo image -->
+			<img class="img-fluid rounded header_img" src="images/logo.jpeg" alt="logo">
+			<!-- Header title and subtitle -->
 			<div class="header_title">
 				<h1>K Glin Zachariah</h1>
-				<h4>Front-End Web Developer</h4>
+				<h4>Front-End Developer</h4>
 			</div>
-	</header>
-	<div  class="socialmedia">
-		<span class="fa-stack fa-lg">
-			  <i class="fa fa-square-o fa-stack-2x"></i>
-			  <i class="fa fa-linkedin fa-stack-1x"></i>
-		</span>
-		<span class="fa-stack fa-lg">
-			  <i class="fa fa-square-o fa-stack-2x"></i>
-			  <i class="fa fa-gitlab fa-stack-1x"></i>
-		</span>
-		<span class="fa-stack fa-lg">
-			  <i class="fa fa-square-o fa-stack-2x"></i>
-			  <i class="fa fa-twitter fa-stack-1x"></i>
-		</span>
-	</div>
-	<div class="content">
-		<div class="cover_image_box">
-			<img src="images/cover-small.jpg" >
+		</header>
+		<!--  section 2 > content-->
+		<div class="content">
+			<div class="content_social">
+				<div id="social-icon" class="social">	
+					<a href="https://www.facebook.com/glinzac"><img src="images/social1.png" class="img-fluid rounded social_icon" alt="social-icon"></a>
+					<a href="https://www.linkedin.com/in/glin-zachariah/"><img src="images/social2.png" class="img-fluid rounded social_icon" alt="social-icon"></a>
+					<a href="https://twitter.com/glinzac"><img src="images/social3.png" class="img-fluid rounded social_icon" alt="social-icon"></a>
+				</div>
+				<img  src="images/share.png" onclick="socialToggle()" class="img-fluid rounded share_icon" alt="share-icon">
+			</div>
+		  <picture>
+			  <source media="(max-width: 765px)" srcset="images/cover-large.jpg">
+			  <source media="(min-width: 700px)" srcset="images/cover-med.jpg">
+			  <img class="img-fluid rounded content_img"  src="images/cover-small.jpg" alt="conent-image">
+		   </picture>
 		</div>
-		<div class="content_inner">
-			<div class="content_title">
-			<h1>Featured Work</h1>
+		<!-- section 3 > works -->
+		<section class="works">
+			<!-- First work -->
+			<h2 class="work_title">Featured Work</h2>
+			<div class="work_inner">
+				<a href="https://github.com/GlinZachariah/ship-inventory-system">			
+					<figure class="figure">
+						<img src="images/work1.jpg" class="figure-img img-fluid rounded work_img" alt="work-icon-1">
+						<figcaption class="figure-caption">Inventory System</figcaption>
+					</figure>
+				</a>
+				<!-- Second Work -->
+				<a href="https://github.com/GlinZachariah/ARMS">			
+					<figure class="figure">
+						<img src="images/work2.jpg" class="figure-img img-fluid rounded work_img" alt="work-icon-2">
+						<figcaption class="figure-caption">Online Request System</figcaption>
+					</figure>
+				</a>
+				<!-- Third Work -->
+				<a href="https://github.com/GlinZachariah/_s">			
+					<figure class="figure">
+						<img src="images/work3.jpg" class="figure-img img-fluid rounded  work_img" alt="work-icon-3">
+						<figcaption class="figure-caption">WordPress Theme Development</figcaption>
+					</figure>
+				</a>
 			</div>
-			<div class="feature-work">
-				<img class="feature-work-img" src="images/work1.jpg">
-				<h4 class="feature-work-title">Ship Inventory System</h4>
-				<a href="">http:/gitlab.com/glinzac/work1</a>
-			</div>
-			<div class="feature-work">
-				<img class="feature-work-img" src="images/work2.jpg">
-				<h4 class="feature-work-title">Online Request System</h4>
-				<a href="">http:/gitlab.com/glinzac/work2</a>
-			</div>
-			<div class="feature-work">
-				<img class="feature-work-img" src="images/work3.jpg">
-				<h4 class="feature-work-title">WordPress Theme Development</h4>
-				<a href="">http:/gitlab.com/glinzac/work3</a>
-			</div>
-		</div>
+		</section>
 	</div>
-</div>
-</div>
-	<script src="https://use.fontawesome.com/c2e1b3cd81.js"></script>
 </body>
 </html>
